@@ -6,7 +6,7 @@ type Params = { [key: string]: never };
 export class Filter extends BaseFilter<Params> {
   override filter({ items }: FilterArguments<Params>): Promise<Item[]> {
     return Promise.resolve([...items].reverse());
-  }v
+  }
   override params(): Params {
     return {};
   }
